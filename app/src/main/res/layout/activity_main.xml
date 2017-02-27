@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#f00"
+        android:textSize="32sp"
+        tools:text="40"/>
+
+    <TextView
+        android:id="@+id/sui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_age"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:text="岁"
+        android:textColor="#88000000"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sui"
+        android:src="@mipmap/icon_arrow"/>
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/fds"
+        android:focusable="true"
+        android:text="佛挡杀佛"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_1"
+        android:layout_marginLeft="10dp"
+        android:descendantFocusability="afterDescendants"/>
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_below="@+id/recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fds"
+        android:layout_centerHorizontal="true"
+        android:focusable="true"
+        android:text="佛挡杀佛"/>
+
+    <Button
+        android:layout_toRightOf="@+id/btn_2"
+        android:layout_below="@+id/recyclerView"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:background="@drawable/fds"
+        android:layout_centerHorizontal="true"
+        android:focusable="true"
+        android:text="佛挡杀佛"/>
+</RelativeLayout>
